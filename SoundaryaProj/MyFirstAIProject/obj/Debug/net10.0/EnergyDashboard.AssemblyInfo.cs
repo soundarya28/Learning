@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EnergyDashboard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb7abc7f6c7b648ccc5737447f69b89b5d4918e6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad4d199ab60dcba7dd91dbc7aa73552f801927c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("EnergyDashboard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EnergyDashboard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

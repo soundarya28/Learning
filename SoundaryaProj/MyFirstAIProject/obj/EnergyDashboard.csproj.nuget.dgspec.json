@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raman\\OneDrive\\Documents\\GitHub\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj": {}
+    "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raman\\OneDrive\\Documents\\GitHub\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj": {
+    "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raman\\OneDrive\\Documents\\GitHub\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj",
+        "projectUniqueName": "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj",
         "projectName": "EnergyDashboard",
-        "projectPath": "C:\\Users\\raman\\OneDrive\\Documents\\GitHub\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj",
+        "projectPath": "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\MyFirstAIProject\\EnergyDashboard.csproj",
         "packagesPath": "C:\\Users\\raman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raman\\OneDrive\\Documents\\GitHub\\SoundaryaProj\\MyFirstAIProject\\obj\\",
+        "outputPath": "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\MyFirstAIProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
