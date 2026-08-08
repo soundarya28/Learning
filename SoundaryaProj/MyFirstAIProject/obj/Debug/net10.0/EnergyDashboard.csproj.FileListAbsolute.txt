@@ -1,0 +1,15 @@
+C:\Users\raman\source\repos\MyFirstAIProject\bin\Debug\net10.0\EnergyDashboard.exe
+C:\Users\raman\source\repos\MyFirstAIProject\bin\Debug\net10.0\EnergyDashboard.deps.json
+C:\Users\raman\source\repos\MyFirstAIProject\bin\Debug\net10.0\EnergyDashboard.runtimeconfig.json
+C:\Users\raman\source\repos\MyFirstAIProject\bin\Debug\net10.0\EnergyDashboard.dll
+C:\Users\raman\source\repos\MyFirstAIProject\bin\Debug\net10.0\EnergyDashboard.pdb
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.AssemblyInfoInputs.cache
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.AssemblyInfo.cs
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.csproj.CoreCompileInputs.cache
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.sourcelink.json
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.dll
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\refint\EnergyDashboard.dll
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.pdb
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\EnergyDashboard.genruntimeconfig.cache
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\ref\EnergyDashboard.dll

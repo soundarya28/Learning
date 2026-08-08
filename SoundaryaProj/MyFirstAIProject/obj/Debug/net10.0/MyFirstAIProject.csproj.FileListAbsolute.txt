@@ -1,0 +1,5 @@
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\MyFirstAIProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\MyFirstAIProject.AssemblyInfoInputs.cache
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\MyFirstAIProject.AssemblyInfo.cs
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\MyFirstAIProject.csproj.CoreCompileInputs.cache
+C:\Users\raman\source\repos\MyFirstAIProject\obj\Debug\net10.0\MyFirstAIProject.sourcelink.json
