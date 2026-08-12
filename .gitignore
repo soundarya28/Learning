@@ -56,3 +56,42 @@ SoundaryaProj/MyFirstAIProject/.vs/MyFirstAIProject/CopilotIndices/18.8.1096.640
 /SoundaryaProj/MyFirstAIProject/.vs/MyFirstAIProject/CopilotIndices/18.8.1096.64007
 /SoundaryaProj/MyFirstAIProject/.vs/MyFirstAIProject/CopilotIndices/18.8.1096.64007
 /SoundaryaProj/MyFirstAIProject/.vs/MyFirstAIProject/CopilotIndices
+/SoundaryaProj/MyFirstAIProject/.vs
+/SoundaryaProj/EnergyConsumption/obj/Debug
+*.vsidx
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build output
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio generated files
+*.pdb
+*.dll
+
+# NuGet
+*.nupkg
+packages/
+**/obj/
+**/bin/
+
+# NuGet generated files
+*.nuget.g.props
+*.nuget.g.targets
+project.assets.json
+project.nuget.cache
+*.csproj.nuget.dgspec.json
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# Rider
+.idea/
+
+# Logs
+*.log
