@@ -1,8 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using SoundaryaProj.EnergyConsumption.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
+// Register EF Core ApplicationDbContext. Ensure a "DefaultConnection" exists in appsettings.json.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
