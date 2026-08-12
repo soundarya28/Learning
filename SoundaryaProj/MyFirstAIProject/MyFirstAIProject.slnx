@@ -1,4 +1,5 @@
 <Solution>
+  <Project Path="../EnergyConsumption/EnergyConsumption.csproj" Id="f0fc91c0-4c6a-466b-bb85-5e3d866d5ac9" />
   <Project Path="../Models/Models.csproj" Id="a8effd4f-f742-4198-916e-a81a4d3cb1fa" />
   <Project Path="EnergyDashboard.csproj" />
 </Solution>
