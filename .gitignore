@@ -95,3 +95,9 @@ project.nuget.cache
 
 # Logs
 *.log
+/SoundaryaProj/EnergyConsumption/obj
+/SoundaryaProj/EnergyConsumption/obj
+/SoundaryaProj/EnergyConsumption/obj
+/SoundaryaProj/Models/bin
+/SoundaryaProj/Models/bin
+/SoundaryaProj/Models/bin
