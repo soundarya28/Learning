@@ -174,3 +174,10 @@ SoundaryaProj/MyFirstAIProject/obj/Debug/net10.0/EnergyDashboard.AssemblyInfo.cs
 SoundaryaProj/MyFirstAIProject/obj/Debug/net10.0/EnergyDashboard.AssemblyInfoInputs.cache
 SoundaryaProj/MyFirstAIProject/obj/Debug/net10.0/EnergyDashboard.assets.cache
 SoundaryaProj/MyFirstAIProject/obj/Debug/net10.0/EnergyDashboard.GeneratedMSBuildEditorConfig.editorconfig
+/SoundaryaProj/Models
+/SoundaryaProj/Models/obj
+/SoundaryaProj/Models/obj
+/SoundaryaProj/EnergyConsumption/obj
+/SoundaryaProj/MyFirstAIProject/obj
+SoundaryaProj/EnergyConsumption/obj/project.nuget.cache
+SoundaryaProj/Models/obj/Debug/net10.0/Models.AssemblyInfo.cs
