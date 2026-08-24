@@ -1,0 +1,6 @@
+@EnergyConsumption_HostAddress = http://localhost:5237
+
+GET {{EnergyConsumption_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

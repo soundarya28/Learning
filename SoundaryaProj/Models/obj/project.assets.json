@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raman\\source\\repos\\Models\\Models.csproj",
+      "projectUniqueName": "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\Models\\Models.csproj",
       "projectName": "Models",
-      "projectPath": "C:\\Users\\raman\\source\\repos\\Models\\Models.csproj",
+      "projectPath": "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\Models\\Models.csproj",
       "packagesPath": "C:\\Users\\raman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raman\\source\\repos\\Models\\obj\\",
+      "outputPath": "D:\\SRM_Prj\\Learning\\Learning\\SoundaryaProj\\Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
