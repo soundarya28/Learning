@@ -6,7 +6,7 @@ FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 WORKDIR /src
 
 # Copy the project file
-COPY ["EnergyConsumption.csproj", "./"]
+COPY ["SoundaryaProj/EnergyConsumption/EnergyConsumption.csproj", "./"]
 
 # Restore NuGet packages
 RUN dotnet restore "EnergyConsumption.csproj"
