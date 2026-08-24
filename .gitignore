@@ -181,3 +181,9 @@ SoundaryaProj/MyFirstAIProject/obj/Debug/net10.0/EnergyDashboard.GeneratedMSBuil
 /SoundaryaProj/MyFirstAIProject/obj
 SoundaryaProj/EnergyConsumption/obj/project.nuget.cache
 SoundaryaProj/Models/obj/Debug/net10.0/Models.AssemblyInfo.cs
+
+bin/
+obj/
+.vs/
+*.user
+*.suo
