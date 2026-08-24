@@ -2,6 +2,7 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Models.Entities;
 using SoundaryaProj.Models.Entities;
 
 namespace SoundaryaProj.EnergyConsumption.Data;

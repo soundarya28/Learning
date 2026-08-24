@@ -2,7 +2,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SoundaryaProj.Models.Entities;
+namespace Models.Entities;
 
 public class Appliance
 {

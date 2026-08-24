@@ -145,4 +145,5 @@ SoundaryaProj/EnergyConsumption/obj/Debug/net10.0/EnergyConsumption.AssemblyInfo
 *.db-wal
 *.db-wal
 /SoundaryaProj/EnergyConsumption/obj
+/SoundaryaProj/MyFirstAIProject/obj
 *.props

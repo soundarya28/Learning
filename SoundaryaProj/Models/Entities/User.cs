@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace SoundaryaProj.Models.Entities;
+namespace Models.Entities;
 
 public class User
 {
