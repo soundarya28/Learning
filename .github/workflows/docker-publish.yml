@@ -24,6 +24,6 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: .
-          file: ./EnergyConsumption/Dockerfile
+          file: ./SoundaryaProj/EnergyConsumption/Dockerfile
           push: true
           tags: soundarya28/srm_containers_and_devops_soundarya:latest
