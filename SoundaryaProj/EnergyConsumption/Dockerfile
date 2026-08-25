@@ -7,12 +7,14 @@ WORKDIR /src
 
 # Copy the project file
 COPY ["SoundaryaProj/EnergyConsumption/EnergyConsumption.csproj", "./"]
-
+COPY ["SoundaryaProj/Models/Models.csproj", "./"]
 # Restore NuGet packages
 RUN dotnet restore "EnergyConsumption.csproj"
 
 # Copy the remaining source code
-COPY . .
+#COPY . .
+COPY SoundaryaProj/EnergyConsumption/ EnergyConsumption/
+COPY SoundaryaProj/Models/ Models/
 
 # Build and publish the application
 RUN dotnet publish "EnergyConsumption.csproj" \
