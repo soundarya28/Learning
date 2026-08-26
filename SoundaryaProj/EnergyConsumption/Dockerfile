@@ -1,38 +1,31 @@
-# ============================
-# 1. Build Stage
-# ============================
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
 
 WORKDIR /src
 
-# Copy the project file
-COPY ["SoundaryaProj/EnergyConsumption/EnergyConsumption.csproj", "./"]
+# Copy project files while preserving their real structure
+COPY ["SoundaryaProj/EnergyConsumption/EnergyConsumption.csproj", "SoundaryaProj/EnergyConsumption/"]
+COPY ["SoundaryaProj/Models/Models.csproj", "SoundaryaProj/Models/"]
 
-# Restore NuGet packages
-RUN dotnet restore "EnergyConsumption.csproj"
+# Restore
+RUN dotnet restore "SoundaryaProj/EnergyConsumption/EnergyConsumption.csproj"
 
-# Copy the remaining source code
-COPY . .
+# Copy source code
+COPY SoundaryaProj/EnergyConsumption/ SoundaryaProj/EnergyConsumption/
+COPY SoundaryaProj/Models/ SoundaryaProj/Models/
 
-# Build and publish the application
-RUN dotnet publish "EnergyConsumption.csproj" \
+# Publish
+RUN dotnet publish "SoundaryaProj/EnergyConsumption/EnergyConsumption.csproj" \
     -c Release \
     -o /app/publish \
     --no-restore
 
 
-# ============================
-# 2. Runtime Stage
-# ============================
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 
 WORKDIR /app
 
-# Copy published application from build stage
 COPY --from=build /app/publish .
 
-# Application listens on port 8080
 EXPOSE 8080
 
-# Start the application
 ENTRYPOINT ["dotnet", "EnergyConsumption.dll"]
