@@ -2,18 +2,14 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Models.Entities;
-using SoundaryaProj.Models.Entities;
+using SoundaryaProj.EnergyConsumption.Models;
 
 namespace SoundaryaProj.EnergyConsumption.Data;
 
 public class ApplicationDbContext : DbContext
 {
     public DbSet<User> Users { get; set; } = null!;
-    public DbSet<Appliance> Appliances { get; set; } = null!;
-    public DbSet<Consumption> Consumptions { get; set; } = null!;
-    public DbSet<Prediction> Predictions { get; set; } = null!;
-    public DbSet<Recommendation> Recommendations { get; set; } = null!;
+    public DbSet<EnergyRecord> EnergyRecords { get; set; } = null!;
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
@@ -49,70 +45,28 @@ public class ApplicationDbContext : DbContext
                   .HasDefaultValue(true);
         });
 
-        modelBuilder.Entity<Appliance>(entity =>
+        modelBuilder.Entity<EnergyRecord>(entity =>
         {
-            entity.ToTable("Appliances");
-            entity.HasKey(a => a.ApplianceId);
-            entity.Property(a => a.ApplianceId).ValueGeneratedOnAdd();
-            entity.Property(a => a.Name).IsRequired().HasMaxLength(200);
-            entity.Property(a => a.Category).HasMaxLength(100);
-            entity.Property(a => a.IsActive).HasDefaultValue(true);
+            entity.ToTable("EnergyRecords");
 
-            entity.HasOne(a => a.User)
-                  .WithMany()
-                  .HasForeignKey(a => a.UserId)
-                  .OnDelete(DeleteBehavior.Cascade);
-        });
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Id).ValueGeneratedOnAdd();
 
-        modelBuilder.Entity<Consumption>(entity =>
-        {
-            entity.ToTable("Consumptions");
-            entity.HasKey(c => c.ConsumptionId);
-            entity.Property(c => c.ConsumptionId).ValueGeneratedOnAdd();
-            entity.Property(c => c.EnergyKwh).HasColumnType("decimal(18,4)");
+            entity.Property(e => e.ApplianceId)
+                  .IsRequired();
 
-            entity.HasOne(c => c.User)
-                  .WithMany()
-                  .HasForeignKey(c => c.UserId)
-                  .OnDelete(DeleteBehavior.Cascade);
+            entity.Property(e => e.Timestamp)
+                  .IsRequired();
 
-            entity.HasOne(c => c.Appliance)
-                  .WithMany()
-                  .HasForeignKey(c => c.ApplianceId)
-                  .OnDelete(DeleteBehavior.Cascade);
-        });
+            entity.Property(e => e.ConsumptionKwh)
+                  .IsRequired();
 
-        modelBuilder.Entity<Prediction>(entity =>
-        {
-            entity.ToTable("Predictions");
-            entity.HasKey(p => p.PredictionId);
-            entity.Property(p => p.PredictionId).ValueGeneratedOnAdd();
-            entity.Property(p => p.PredictedEnergyKwh).HasColumnType("decimal(18,4)");
+            entity.Property(e => e.IsActive)
+                  .HasDefaultValue(true);
 
-            entity.HasOne(p => p.User)
-                  .WithMany()
-                  .HasForeignKey(p => p.UserId)
-                  .OnDelete(DeleteBehavior.Cascade);
-        });
-
-        modelBuilder.Entity<Recommendation>(entity =>
-        {
-            entity.ToTable("Recommendations");
-            entity.HasKey(r => r.RecommendationId);
-            entity.Property(r => r.RecommendationId).ValueGeneratedOnAdd();
-            entity.Property(r => r.Title).IsRequired().HasMaxLength(200);
-            entity.Property(r => r.Description).HasMaxLength(2000);
-            entity.Property(r => r.EstimatedSavingKwh).HasColumnType("decimal(18,4)");
-
-            entity.HasOne(r => r.User)
-                  .WithMany()
-                  .HasForeignKey(r => r.UserId)
-                  .OnDelete(DeleteBehavior.Cascade);
-
-            entity.HasOne(r => r.Appliance)
-                  .WithMany()
-                  .HasForeignKey(r => r.ApplianceId)
-                  .OnDelete(DeleteBehavior.SetNull);
+            // Optionally add indexes
+            entity.HasIndex(e => e.ApplianceId);
+            entity.HasIndex(e => e.Timestamp);
         });
 
         base.OnModelCreating(modelBuilder);
@@ -149,21 +103,18 @@ public class ApplicationDbContext : DbContext
                     u.UpdatedAt = now;
                 }
             }
-            else if (entry.Entity is Appliance a && entry.State == EntityState.Added)
+            else if (entry.Entity is EnergyRecord er)
             {
-                a.CreatedAt = now;
-            }
-            else if (entry.Entity is Consumption c && entry.State == EntityState.Added)
-            {
-                c.CreatedAt = now;
-            }
-            else if (entry.Entity is Prediction p && entry.State == EntityState.Added)
-            {
-                p.CreatedAt = now;
-            }
-            else if (entry.Entity is Recommendation r && entry.State == EntityState.Added)
-            {
-                r.CreatedAt = now;
+                if (entry.State == EntityState.Added)
+                {
+                    er.CreatedAt = now;
+                    er.UpdatedAt = now;
+                    er.IsActive = er.IsActive;
+                }
+                else if (entry.State == EntityState.Modified)
+                {
+                    er.UpdatedAt = now;
+                }
             }
         }
     }
