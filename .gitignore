@@ -189,3 +189,5 @@ obj/
 *.suo
 *.v2
 SoundaryaProj/MyFirstAIProject/.vs/MyFirstAIProject.slnx/DesignTimeBuild/.dtbcache.v2
+/SoundaryaProj/EnergyConsumption/Migrations
+/SoundaryaProj/EnergyConsumption/Migrations
