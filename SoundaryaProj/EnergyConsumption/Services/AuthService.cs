@@ -1,8 +1,8 @@
+using EnergyConsumption.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Models.Entities;
-using SoundaryaProj.EnergyConsumption.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;

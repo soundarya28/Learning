@@ -1,3 +1,4 @@
+using EnergyConsumption.Data;
 using EnergyConsumption.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -5,7 +6,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi;
 using Models.Entities;
-using SoundaryaProj.EnergyConsumption.Data;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);

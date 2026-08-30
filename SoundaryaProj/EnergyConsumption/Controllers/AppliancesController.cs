@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using EnergyConsumption.Data;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Models.Entities;
-using SoundaryaProj.EnergyConsumption.Data;
 
 namespace EnergyConsumption.Controllers;
 

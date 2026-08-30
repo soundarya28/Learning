@@ -5,9 +5,9 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using EnergyConsumption.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using SoundaryaProj.EnergyConsumption.Data;
 using SoundaryaProj.EnergyConsumption.Models;
 
 namespace SoundaryaProj.EnergyConsumption.Services;

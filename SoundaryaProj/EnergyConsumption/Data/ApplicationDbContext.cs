@@ -2,9 +2,10 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Models.Entities;
 using SoundaryaProj.EnergyConsumption.Models;
 
-namespace SoundaryaProj.EnergyConsumption.Data;
+namespace EnergyConsumption.Data;
 
 public class ApplicationDbContext : DbContext
 {
