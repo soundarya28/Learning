@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
-namespace SoundaryaProj.EnergyConsumption.Controllers;
+namespace EnergyConsumption.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

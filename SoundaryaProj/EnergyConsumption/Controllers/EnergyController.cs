@@ -1,26 +1,14 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
 using SoundaryaProj.EnergyConsumption.Services;
-using SoundaryaProj.EnergyConsumption.Models;
 
-namespace SoundaryaProj.EnergyConsumption.Controllers;
+namespace EnergyConsumption.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class EnergyController : ControllerBase
+public class EnergyController(IEnergyService service, ILogger<EnergyController> logger) : ControllerBase
 {
-    private readonly IEnergyService _service;
-    private readonly ILogger<EnergyController> _logger;
-
-    public EnergyController(IEnergyService service, ILogger<EnergyController> logger)
-    {
-        _service = service ?? throw new ArgumentNullException(nameof(service));
-        _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-    }
+    private readonly IEnergyService _service = service ?? throw new ArgumentNullException(nameof(service));
+    private readonly ILogger<EnergyController> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateEnergyDto dto, CancellationToken cancellationToken)
